@@ -1,1 +1,1 @@
-# ic_technical_test
+# ic_technical_assessment
