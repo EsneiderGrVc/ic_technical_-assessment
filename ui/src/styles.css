@@ -9,8 +9,11 @@
     --text-color-1: #b6c2cf;
     --text-color-2: #9da8b3;
 }
+div {
+    box-sizing: border-box;
+}
 body {
-    box-sizing: content-box;
+    box-sizing: border-box;
     background-color: #161a1d;
     color: var(--text-color-1);
 }
