@@ -1,0 +1,89 @@
+.signup-cntr, .page-cntr {
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu-cntr {
+    height: 180px;
+    display: flex;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+}
+.menu-cntr div {
+    flex-grow: 1;
+    position: relative;
+}
+.menu-item {
+    margin-top: -50px;
+    cursor: pointer;
+}
+.menu-item:hover {
+    background-color: var(--dark-color-3);
+}
+.menu-item span {
+    display: block;
+    font-size: 2rem;
+}
+.menu-item .material-icons {
+    font-size: 4rem;
+}
+.menu-item .label {
+    font-family: 'Nunito Sans', sans-serif;
+}
+.anonymous-cntr {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.anonymous-cntr .label {
+    font-family: 'Nunito Sans', sans-serif;
+}
+.form-control input {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+}
+.input-cntr {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input-cntr .label {
+    margin-bottom: 0;
+}
+.title-cntr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-size: 2rem;
+    text-align: center;
+    display: inline-block;
+    margin-right: 5px;
+}
+.calc-icon {
+    font-size: 3rem;
+    color: var(--main-color);
+}
+.create-btn {
+    height: 35px;
+    width: 280px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.label {
+    color: var(--text-color-2);
+}
+.back {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 5px;
+}

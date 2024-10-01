@@ -1,0 +1,21 @@
+<div class="signup-cntr card">
+    <div class="title-cntr">
+        <h3 class="title">Calculator App</h3>
+        <span class="material-icons calc-icon">calculate</span>
+    </div>
+    
+    <form [formGroup]="singUpForm" (submit)="onSubmit()" class="input-cntr">
+        <p class="label">Create an user to start</p>
+        <div class="form-control">
+            <input placeholder="Username" type="text" name="username" id="email" formControlName="username">
+        </div>
+
+        <div class="form-control">
+            <input placeholder="Password" type="password" name="password" id="password" formControlName="password">
+        </div>
+        <button [disabled]="singUpForm.invalid" class="btn primary-btn create-btn" type="submit">Create</button>
+    </form>
+    <div (click)="authService.setWindowView('unset')" class="back">
+        Go back
+    </div>
+</div>

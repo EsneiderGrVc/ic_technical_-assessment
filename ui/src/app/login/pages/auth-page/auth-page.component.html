@@ -1,0 +1,31 @@
+<div class="page-cntr card">
+    <div class="title-cntr">
+        <h3 class="title">Calculator App</h3>
+        <span class="material-icons calc-icon">calculate</span>
+    </div>
+    @if (authService.windowShown() === 'unset') {
+        <div class="menu-cntr">
+            <div (click)="authService.setWindowView('login')" class="menu-item">
+                <span class="material-icons">person</span>
+                <span class="label">Log In</span>
+            </div>
+            <div (click)="authService.setWindowView('signup')" class="menu-item">
+                <div class="item">
+                    <span class="material-icons">person_add</span>
+                    <span class="label">Sign up</span>
+                </div>
+            </div>
+        </div>
+        <div (click)="authService.logInAsAnonymous('')" class="anonymous-cntr">
+            <span class="material-icons">person_off</span>
+            <span class="label">Anonymous</span>
+        </div>
+    }
+    
+    @if (authService.windowShown() === 'login') {
+        <app-log-in></app-log-in>
+    }
+    @if (authService.windowShown() === 'signup') {
+        <app-sign-up></app-sign-up>
+    }
+</div>
