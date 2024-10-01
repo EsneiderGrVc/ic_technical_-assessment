@@ -2,7 +2,6 @@
 
 ## Calculator app built with:
 - Docker
-- AWS (Localstack)
 - Backend: FastAPI (Python 3.11)
 - Frontend: Angular v17
 - Database Postgres v15.2
