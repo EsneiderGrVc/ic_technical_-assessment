@@ -5,10 +5,16 @@ from datetime import datetime
 from models.common.user import User
 from sqlmodel import Relationship
 
-op_enum = Enum(
-    value="OperatorType",
-    names=("ADDITION", "SUBTRACTION", "MULTIPLICATION", "DIVISION"),
-)
+
+# op_enum = Enum(
+#     value="OperatorType",
+#     names=("ADDITION", "SUBTRACTION", "MULTIPLICATION", "DIVISION"),
+# )
+class op_enum(Enum):
+    ADDITION = ("ADDITION",)
+    SUBTRACTION = "SUBTRACTION"
+    MULTIPLICATION = "MULTIPLICATION"
+    DIVISION = "DIVISION"
 
 
 class AuditLog(SQLModel, table=True):
