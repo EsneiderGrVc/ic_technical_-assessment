@@ -141,6 +141,7 @@ export class CalcComponent implements OnInit {
         }
         this.calcByPressingOperator = null;
         this.resultBuffered = true;
+        this.calcService.getAuditLogs();
       });
   };
 }

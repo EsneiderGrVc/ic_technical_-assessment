@@ -5,7 +5,7 @@
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    }
+}
     
 .div1 { grid-area: 4 / 1 / 5 / 2; }
 .div2 { grid-area: 4 / 2 / 5 / 3; }
@@ -47,12 +47,12 @@
     width: 300px;
     margin-bottom: 10px;
     color: rgb(142, 142, 142);
-    background-color: rgb(40, 49, 43);
+    background-color: color-mix(in srgb, #fff, #182230 97%);
     display: flex;
     justify-content: end;
     align-items: center;
-    /* font-family: 'Share Tech', Courier, monospace; */
-    font-family: monospace;
+    font-family: 'Share Tech', Courier, monospace;
+    /* font-family: monospace; */
 }
 
 .test {
