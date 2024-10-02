@@ -22,6 +22,7 @@ class AuditLog_Res(BaseModel):
     first_value: float
     second_value: float
     operator: op_enum
+    result: float
     started_at: datetime
     ended_at: datetime
     created_by: User_RES
