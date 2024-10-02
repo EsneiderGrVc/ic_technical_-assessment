@@ -15,11 +15,8 @@ services:
 
   ui:
     container_name: ui
-    image: nginx
+    build: ./ui
     restart: always
-    volumes:
-      - ./ui/nginx.conf:/etc/nginx/nginx.conf
-      - ./ui/dist/ui:/usr/share/nginx/html
     ports:
       - "80:80"
 
